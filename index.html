@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Multi-Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header><h1>Calculator</h1></header>
+    <nav>
+      <button class="tab active" data-target="standard">Standard</button>
+      <button class="tab" data-target="age">Age</button>
+      <button class="tab" data-target="bmi">BMI</button>
+      <button class="tab" data-target="loan">Loan</button>
+    </nav>
+
+    <!--Standard Calculator-->
+    <div class="panel active" id="standard">
+      <h2>Standard Calculator</h2>
+      <div class="display" id="std-display">0</div>
+      <div class="calc-grid" id="std-buttons">
+        <button class="op" data-val="C">C</button>
+        <button class="op" data-val="(">(</button>
+        <button class="op" data-val=")">)</button>
+        <button class="op" data-val="/">÷</button>
+        <button data-val="7">7</button>
+        <button data-val="8">8</button>
+        <button data-val="9">9</button>
+        <button class="op" data-val="*">×</button>
+        <button data-val="4">4</button>
+        <button data-val="5">5</button>
+        <button data-val="6">6</button>
+        <button class="op" data-val="-">−</button>
+        <button data-val="1">1</button>
+        <button data-val="2">2</button>
+        <button data-val="3">3</button>
+        <button class="op" data-val="+">+</button>
+        <button data-val="0">0</button>
+        <button data-val=".">.</button>
+        <button class="equal" data-val="=">=</button>
+      </div>
+    </div>
+
+    <!--Age Calculator-->
+    <div class="panel" id="age">
+      <h2>Age Calculator</h2>
+      <div class="input-row">
+        <input type="date" id="birthdate">
+      </div>
+      <button class="calc-btn" id="age-btn">Calculate Age</button>
+      <div class="result" id="age-result">Your age will appear here</div>
+    </div>
+
+    <!--Baby ka Figure-->
+    <div class="panel" id="bmi">
+      <h2>BMI Calculator</h2>
+      <div class="input-row">
+        <input type="number" id="bmi-weight" placeholder="Weight (kg)">
+        <input type="number" id="bmi-height" placeholder="Height (cm)">
+      </div>
+      <button class="calc-btn" id="bmi-btn">Calculate BMI</button>
+      <div class="result" id="bmi-result">Your BMI will appear here</div>
+    </div>
+
+    <div class="panel" id="loan">
+      <h2>Loan Calculator</h2>
+      <div class="input-row">
+        <input type="number" id="loan-amount" placeholder="Amount">
+        <input type="number" id="loan-rate" placeholder="Rate (%)">
+        <input type="number" id="loan-years" placeholder="Years">
+      </div>
+      <button class="calc-btn" id="loan-btn">Calculate Loan</button>
+      <div class="result" id="loan-result">Monthly and total payments will appear here</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
