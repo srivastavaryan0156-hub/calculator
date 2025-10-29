@@ -1,4 +1,4 @@
-/* ===== Tabs ===== */
+/*Tabs*/
 const tabs=document.querySelectorAll('.tab');
 const panels=document.querySelectorAll('.panel');
 tabs.forEach(tab=>{
@@ -10,7 +10,7 @@ tabs.forEach(tab=>{
   });
 });
 
-/* ===== Standard Calculator ===== */
+/*Standard Calculator*/
 const display=document.getElementById('std-display');
 let expr='';
 document.getElementById('std-buttons').addEventListener('click',e=>{
@@ -32,7 +32,7 @@ document.getElementById('std-buttons').addEventListener('click',e=>{
   display.textContent=expr;
 });
 
-/* ===== Age Calculator ===== */
+/*if she 18 or not Calculator*/
 document.getElementById('age-btn').onclick=()=>{
   const birth=new Date(document.getElementById('birthdate').value);
   if(!document.getElementById('birthdate').value){
@@ -65,7 +65,7 @@ const bmi = (w / (heightInMeters * heightInMeters)).toFixed(1);
   document.getElementById('bmi-result').textContent=`BMI: ${bmi} (${msg})`;
 };
 
-/* ===== Loan Calculator ===== */
+/*Loan Calculator*/
 document.getElementById('loan-btn').onclick=()=>{
   const p=parseFloat(document.getElementById('loan-amount').value);
   const r=parseFloat(document.getElementById('loan-rate').value)/100/12;
