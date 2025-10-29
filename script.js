@@ -46,7 +46,7 @@ document.getElementById('age-btn').onclick=()=>{
   document.getElementById('age-result').textContent=`You are ${age} years old.`;
 };
 
-/*Baby ka figure*/
+/*Baby ka figure Calculator*/
 document.getElementById('bmi-btn').onclick=()=>{
   const w=parseFloat(document.getElementById('bmi-weight').value);
   const h=parseFloat(document.getElementById('bmi-height').value);
